@@ -49,13 +49,22 @@ public class FundamentalsJava {
 
         var union = proffesion + " " + user;
         System.out.println("Information: " + union);
-        
-        var i = 3; var j = 6;
+
+        var i = 3;
+        var j = 6;
         // contexto cadena
         System.out.println("Suma: " + (i + j)); // Uso de parentesis modifican la prioridad
         System.out.println(i + j + user); // Evalua de isq a der, realiza suma
         System.out.println(user + i + j); // Contexto cadena todo es una cadena
+
+        var nameConst = "PROCESS";
+
+        System.out.println("Nombre de constante: \n" + nameConst); // Salto de linea
+        System.out.println("Nombre de constante: \t" + nameConst); // Tabulador
+        System.out.println("Nombre de constante: \b" + nameConst); // Retroceso
         
+        Operators oneOperator = new Operators();
+        oneOperator.arithmetic();
     }
 
 }
