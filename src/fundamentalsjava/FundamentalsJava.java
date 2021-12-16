@@ -4,6 +4,8 @@
  */
 package fundamentalsjava;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Acer
@@ -62,9 +64,16 @@ public class FundamentalsJava {
         System.out.println("Nombre de constante: \n" + nameConst); // Salto de linea
         System.out.println("Nombre de constante: \t" + nameConst); // Tabulador
         System.out.println("Nombre de constante: \b" + nameConst); // Retroceso
-        
+        System.out.println("Nombre de constante: \'" + nameConst + "\'"); // Escapar comilla simple
+        System.out.println("Nombre de constante: \"" + nameConst + "\""); // Escapar comilla doble
+
         Operators oneOperator = new Operators();
         oneOperator.arithmetic();
+        
+        System.out.println("Ingresa tu nombre: ");
+        Scanner consola = new Scanner(System.in);
+        var username = consola.nextLine();
+        System.out.println("The username is: " + username);
     }
 
 }
