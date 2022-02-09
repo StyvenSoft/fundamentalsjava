@@ -49,5 +49,32 @@ public class TypeOfData {
         System.out.println("Valor minimo double: " + Double.MIN_VALUE);
         System.out.println("Valor maximo double: " + Double.MAX_VALUE);
         
+        
+        char miCaracter = 'a';
+        System.out.println("miCaracter = " + miCaracter);
+        
+        char varcharDecimal = 33;
+        System.out.println("varcharDecimal = " + varcharDecimal);
+        
+        char caracterB = 'B';
+        System.out.println("caracterB = " + caracterB);
+        
+        char varSimbol = '!';
+        System.out.println("varSimbol = " + varSimbol);
+        
+        var varCharOne = '\u0021';
+        System.out.println("varCharOne = " + varCharOne);
+        
+        int varEnteraSimbol = '#';
+        System.out.println("varEnteraSimbol = " + varEnteraSimbol);
+        
+        boolean varBoolean = true;
+        System.out.println("varBoolean = " + varBoolean);
+        
+        if(varBoolean) {
+            System.out.println("La bandera es verdadera");
+        } else {
+            System.out.println("La bandera es falsa");
+        }
     }
 }
