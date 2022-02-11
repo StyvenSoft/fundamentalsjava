@@ -4,6 +4,8 @@
  */
 package fundamentalsjava;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Acer
@@ -76,5 +78,36 @@ public class TypeOfData {
         } else {
             System.out.println("La bandera es falsa");
         }
+        
+        var age = 30;
+        var isAdult = age >= 18;
+        
+        if(isAdult) {
+            System.out.println("Eres mayor de edad");
+        } else {
+            System.out.println("Eres menos de edad");
+        }
+        
+        // Convertir tipo String a un tipo int
+        var edad = Integer.parseInt("25");
+        
+        System.out.println("edad = " + (edad + 4));
+        
+        var valuePI = Double.parseDouble("3.1416");
+        
+        System.out.println("valuePI = " + valuePI);
+        
+        // Solicitar un valor
+        
+        var console = new Scanner(System.in);
+        System.out.println("Ingresa tu edad: ");
+        edad = Integer.parseInt(console.nextLine());
+        System.out.println("Edad: " + edad);
+        
+        // Converir un tipo int a String
+        
+        var ageText = String.valueOf(10);
+        System.out.println("ageText = " + ageText);
+        
     }
 }
